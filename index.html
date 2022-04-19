@@ -1,184 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HTML 5 Boilerplate</title>
-    <link rel="stylesheet" href="style.css">
-   
-  </head>
-   <style>
-@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 
-
-html {
-  font-size: 20px;
-  font-family: varela round, Yanone Kaffeesatz, sans, sans-serif, monospace;
-  background: linear-gradient(180deg, orange, white, green);
-}
-
-#main {
-  text-align: center;
-}
-
-@media (max-width: 800px) {
-  html {
-    font-size: 15px;
-  }
-}
-
-@media (max-width: 400px) {
-  html {
-    font-size: 10px;
-  }
-}
-
-img {
-      max-width: 100%;
-      display: block;
-      height: auto;
-      margin: 0 auto;
-  }
-
-figcaption {
-  margin: 40px;
-}
-
-.id-card {
-  border-style: solid;
-  border-radius: 10px;
-  border-width:5px;
-  text-align: justify;
-  padding: 0px 10px 0px 10px;
-  margin: 5px 5px 5px 5px;
-}
-
-#title {
-  background: linear-gradient(90deg, orange, white, green);
-  border-style: solid;
-  padding: 0px 10px 0px 10px;
-  margin: 30px 90px;
-  border-width: 10px;
-}
-
-.line {
-  background-color: black;
-  border-width: 0px;
-  height: 5px;
-  margin: 0px -10px 0px -10px;
-}
-
-h3 {
-  text-align: center;
-}
-
-.section {
-  text-align: left;
-  line-height: 40px;
-}
-
-blockquote {
-  text-align: center;
-  font-family: monospace;
-}
-
-a {
-  color: lightblue;
-}
-
-a:visited {
-  color: red;
-}
-
-ul {
-  text-align: left;
-}
-</style>
-  <body>
-	  <main id="main">
-  <header>
-    <h1 id="title">Dr. A.P.J. Abdul Kalam</h1>
-    <h4>The Missile Man of India | People's President</h4>
-  </header>
-  <hr class="line">
+<body>
+  <main id="main">
+    <header>
+      <h1 id="title">Dr. A.P.J. Abdul Kalam</h1>
+      <h4>The Missile Man of India | People's President</h4>
+    </header>
+    <hr class="line">
     <figure id="img-div">
-      <img id="image" src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/apj-abdul-kalam-prasanna-kumar.jpg"
- alt="A potrait of Dr. A.P.J. Abdul Kalam"
-      >
+      <div class="flip-box">
+        <div class="flip-box-inner">
+          <div class="flip-box-front">
+            <img id="image"
+              src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/apj-abdul-kalam-prasanna-kumar.jpg"
+              alt="A potrait of Dr. A.P.J. Abdul Kalam">
+          </div>
+          <div class="flip-box-back">
+            <p>APJ Abdul Kalam is a famous name in the whole world. He is counted among the greatest scientists of the
+              21st century. Even more, he becomes the 11th president of India and served his country. He was the most
+              valued person of the country as his contribution as a scientist and as a president is beyond compare.</p>
+            <h4><u>Some Awards and Honours in Dr APJ Abdul Kalam's name</u></h4>
+            <ul class="ul">
+              <li>2014: Honorary Professor</li>
+              <li>2014: Doctor of Science</li>
+              <li>2013: Von Braun Award</li>
+              <li>2012: Doctor of Laws</li>
+              <li>2011: IEEE Honorary Membership</li>
+              <li>2010: Doctor of Engineering</li>
+              <li>2009: Honorary Doctorate</li>
+              <li>2009: Hoover Medal</li>
+              <li>2009: International von K�rm�n Wings Award</li>
+              <li>2007: Honorary Doctorate of Science and Technology</li>
+              <li>2007: King Charles II Medal</li>
+              <li>2000: Ramanujan Award</li>
+              <li>1998: Veer Savarkar Award</li>
+              <li>1997: Indira Gandhi Award for National Integration</li>
+              <li>1997: <strong>Bharat Ratna</strong></li>
+              <li>1995: Honorary Fellow</li>
+              <li>1994: Distinguished Fellow</li>
+              <li>1990: <strong>Padma Vibhushan</strong></li>
+              <li>1981: <strong>Padma Bhushan</strong></li>
+            </ul>
+          </div>
+        </div>
+      </div>
       <figcaption id="img-caption">
-      A Painting of APJ Abdul Kalam by Prasanna Kumar
+        A Paiting of APJ Abdul Kalam by Prasanna Kumar
       </figcaption>
-            <p>APJ Abdul Kalam is a famous name in the whole world. He is counted among the greatest scientists of the 21st century. Even more, he becomes the 11th president of India and served his country. He was the most valued person of the country as his contribution as a scientist and as a president is beyond compare.</p>
-  </figure>
-  
-  <section class="id-card" id="tribute-info">
-    <p><strong>Full Name:</strong>      Avul Pakir Jainulabdeen Abdul Kalam</p>
-    <p><strong>Born:</strong>           15 October 1931</p>
-    <p><strong>Place of Birth:</strong> Rameswaram, Madras Presidency, British India (present-day Tamil Nadu, India)</p>
-    <p><strong>Died:</strong>           27 July 2015 (aged 83)
-      Shillong, Meghalaya, India</p>
-  </section>
-  
-  <section class="section">
-    <h3>Here's a time line of Dr. A.P.J. Abdul Kalam's life:</h3>
-    <ul>
-      <li>
-        <strong>1931:</strong> Born on 15 October 1931, in Rameswaram on Pamban Island (now in Tamil Nadu).
-      </li>
-      <li>
-        <strong>1954:</strong> Graduated in Physics from the Saint Joseph's College, Tiruchirappalli, then affiliated with the University of Madras.
-      </li>
-      <li>
-        <strong>1955:</strong> Moved to Madras to study aerospace engineering in Madras Institute of Technology.
-      </li>
-      <li>
-        <strong>1960:</strong> Graduated from the Madras Institute of Technology and  joined the Aeronautical Development Establishment of the Defence Research and Development Organisation (by Press Information Bureau, Government of India) as a scientist after becoming a member of the Defence Research & Development Service (DRDS).
-      </li>
-      <li>
-        <strong>1969:</strong> Transferred to the Indian Space Research Organisation (ISRO) where he was the project director of India's first Satellite Launch Vehicle (SLV-III).
-      </li>
-      <li>
-        <strong>1970 - 1990:</strong> Made an effort to develop the Polar Satellite Launch Vehicle (PSLV) and SLV-III projects, both of which proved to be successful.
-      </li>
-      <li>
-        <strong>1970:</strong> Directed two projects, Project Devil and Project Valiant, which sought to develop ballistic missiles from the technology of the successful SLV programme.
-      </li>
-      <li>
-        <strong>1980:</strong> Became the project Director for India's First Indegenous Satellite Program.
-      </li>
-      <li>
-        <strong>1992:</strong> Served as the Chief Scientific Adviser to the Prime Minister and Secretary of the Defence Research and Development Organisation from July 1992 to December 1999.
-      </li>
-      <li>
-        <strong>1997:</strong> Awarded Bharat Ratna, the highest civilian award of the Republic of India.
-      </li>
-      <li>
-        <strong>2002:</strong> Won the presidential elections, succeeding K.R. Narayanan and becoming the 11<sup>th</sup> president of India.
-      </li>
-      <li>
-        <strong>2007:</strong> His term as the President of India. He also didn't partake in the elections for a second term stating that he wanted to avoid involving Rashtrapati Bhavan from any political processes.
-      </li>
-      <li>
-        <strong>2012:</strong> Launched a programme for the youth of India called the What Can I Give Movement, with a central theme of defeating corruption.
-      </li>
-      <li>
-        <strong>2015:</strong> Died at the age of 83.
-    </ul>
-    <blockquote cite="https://www.goodreads.com/quotes/642045-don-t-take-rest-after-your-first-victory-because-if-you">
-      <p>"Don’t take rest after your first victory because if you fail in second, more lips are waiting to say that your first victory was just luck."</p>
-      <cite>- Dr. A.P.J. Abdul Kalam</cite>
-    </blockquote>
-  </section>
-  
-  <footer>
-    <h3>
-      To read in detail about the life and achievements of Dr. A.P.J. Abdul Kalam, visit <a id="tribute-link" href="https://en.wikipedia.org/wiki/A._P._J._Abdul_Kalam" target="_blank">this link</a>.
-    </h3>
-  </footer>
+    </figure>
+
+    <section class="id-card" id="tribute-info">
+      <p><strong>Full Name:</strong> Avul Pakir Jainulabdeen Abdul Kalam</p>
+      <p><strong>Born:</strong> 15 October 1931</p>
+      <p><strong>Place of Birth:</strong> Rameswaram, Madras Presidency, British India (present-day Tamil Nadu, India)
+      </p>
+      <p><strong>Died:</strong> 27 July 2015 (aged 83)
+        Shillong, Meghalaya, India</p>
+    </section>
+
+    <section class="section">
+      <h3>Here's a time line of Dr. A.P.J. Abdul Kalam's life:</h3>
+      <ul>
+        <li>
+          <strong>1931:</strong> Born on 15 October 1931, in Rameswaram on Pamban Island (now in Tamil Nadu).
+        </li>
+        <li>
+          <strong>1954:</strong> Graduated in Physics from the Saint Joseph's College, Tiruchirappalli, then affiliated
+          with the University of Madras.
+        </li>
+        <li>
+          <strong>1955:</strong> Moved to Madras to study aerospace engineering in Madras Institute of Technology.
+        </li>
+        <li>
+          <strong>1960:</strong> Graduated from the Madras Institute of Technology and joined the Aeronautical
+          Development Establishment of the Defence Research and Development Organisation (by Press Information Bureau,
+          Government of India) as a scientist after becoming a member of the Defence Research & Development Service
+          (DRDS).
+        </li>
+        <li>
+          <strong>1969:</strong> Transferred to the Indian Space Research Organisation (ISRO) where he was the project
+          director of India's first Satellite Launch Vehicle (SLV-III).
+        </li>
+        <li>
+          <strong>1970 - 1990:</strong> Made an effort to develop the Polar Satellite Launch Vehicle (PSLV) and SLV-III
+          projects, both of which proved to be successful.
+        </li>
+        <li>
+          <strong>1970:</strong> Directed two projects, Project Devil and Project Valiant, which sought to develop
+          ballistic missiles from the technology of the successful SLV programme.
+        </li>
+        <li>
+          <strong>1980:</strong> Became the project Director for India's First Indegenous Satellite Program.
+        </li>
+        <li>
+          <strong>1992:</strong> Served as the Chief Scientific Adviser to the Prime Minister and Secretary of the
+          Defence Research and Development Organisation from July 1992 to December 1999.
+        </li>
+        <li>
+          <strong>1997:</strong> Awarded Bharat Ratna, the highest civilian award of the Republic of India.
+        </li>
+        <li>
+          <strong>2002:</strong> Won the presidential elections, succeeding K.R. Narayanan and becoming the
+          11<sup>th</sup> president of India.
+        </li>
+        <li>
+          <strong>2007:</strong> His term as the President of India. He also didn't partake in the elections for a
+          second term stating that he wanted to avoid involving Rashtrapati Bhavan from any political processes.
+        </li>
+        <li>
+          <strong>2012:</strong> Launched a programme for the youth of India called the What Can I Give Movement, with a
+          central theme of defeating corruption.
+        </li>
+        <li>
+          <strong>2015:</strong> Died at the age of 83.
+      </ul>
+      <blockquote
+        cite="https://www.goodreads.com/quotes/642045-don-t-take-rest-after-your-first-victory-because-if-you">
+        <p>"Don�t take rest after your first victory because if you fail in second, more lips are waiting to say that
+          your first victory was just luck."</p>
+        <cite>- Dr. A.P.J. Abdul Kalam</cite>
+    </section>
+
+    <footer>
+      <h3>
+        To read in detail about the life and achievements of Dr. A.P.J. Abdul Kalam, visit <a id="tribute-link"
+          href="https://en.wikipedia.org/wiki/A._P._J._Abdul_Kalam" target="_blank">this link</a>.
+      </h3>
+    </footer>
   </main>
-  </body>
+
+</body>
 
 </html>
